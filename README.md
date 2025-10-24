@@ -1,9 +1,7 @@
 # prasiolite
 A calm green neovim colorscheme inspired by the gem of the same name
-## Example
+## Screenshots
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d11b25dd-94b5-473c-99d5-b9cf6af669a3" />
-
-
 
 ## Installation
 1. Open your neovim config (`:e $MYVIMRC`)
@@ -12,3 +10,8 @@ A calm green neovim colorscheme inspired by the gem of the same name
 4. Copy `prasiodark.lua` into that folder
 5. Run `:colorscheme prasiodark` or restart neovim
 6. Enjoy!
+
+## Coming ~soon~ eventually:
+- Light mode
+- Support for more languages and plugins
+  - The languages I use (C, C++, Rust, Python) all work, but if something seems wrong with a language you use, please file an issue!
