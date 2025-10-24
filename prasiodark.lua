@@ -4,7 +4,7 @@ if vim.fn.exists("syntax_on") then vim.cmd.syntax('on') end
 
 local C = {
   fg        = "#B9C9CA",
-  delim     = "#818D92",
+  delim     = "#919DA2",
   comment   = "#576E76",
   highlight = "#3B4349",
   bg        = "#1F2428",
