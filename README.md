@@ -1,5 +1,5 @@
 # prasiolite
-A calm green neovim colorscheme inspired by the gem of the same name
+A small neovim colorscheme inspired by the gem of the same name
 ## Screenshots
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d11b25dd-94b5-473c-99d5-b9cf6af669a3" />
 
@@ -13,5 +13,6 @@ A calm green neovim colorscheme inspired by the gem of the same name
 
 ## Coming ~soon~ eventually:
 - Light mode
-- Support for more languages and plugins
+- Support for more languages
   - The languages I use (C, C++, Rust, Python) all work, but if something seems wrong with a language you use, please file an issue!
+- Installation through a plugin manager
