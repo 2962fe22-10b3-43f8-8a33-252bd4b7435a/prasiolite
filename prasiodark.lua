@@ -5,7 +5,7 @@ if vim.fn.exists("syntax_on") then vim.cmd.syntax('on') end
 local C = {
   fg        = "#B9C9CA",
   delim     = "#919DA2",
-  comment   = "#576E76",
+  comment   = "#5D767E",
   highlight = "#3B4349",
   bg        = "#1F2428",
   forest    = "#3E987D",
@@ -14,9 +14,10 @@ local C = {
   pastel    = "#9DD3B0",
   khaki     = "#A5BB82",
   swamp     = "#5A7C20",
-  gold      = "#FDAF00",
-  red       = "#E91F2D",
+  gold      = "#FAAF00",
+  red       = "#FF5F28",
   blue      = "#00BBDE",
+  purple    = "#D89CE7",
 }
 C.operator=C.delim
 
@@ -95,7 +96,7 @@ end
 set_highlights()
 
 vim.g.terminal_color_0  = C.bg
-vim.g.terminal_color_8  = C.delim
+vim.g.terminal_color_8  = C.delim -- gray text
 vim.g.terminal_color_1  = C.red
 vim.g.terminal_color_9  = C.red
 vim.g.terminal_color_2  = C.green
@@ -104,9 +105,9 @@ vim.g.terminal_color_3  = C.gold
 vim.g.terminal_color_11 = C.gold
 vim.g.terminal_color_4  = C.blue
 vim.g.terminal_color_12 = C.blue
-vim.g.terminal_color_5  = C.pastel -- don't have purple but oh well
-vim.g.terminal_color_13 = C.pastel
-vim.g.terminal_color_6  = C.forest
+vim.g.terminal_color_5  = C.purple
+vim.g.terminal_color_13 = C.purple
+vim.g.terminal_color_6  = C.forest -- cyan
 vim.g.terminal_color_14 = C.forest
-vim.g.terminal_color_7  = C.fg
+vim.g.terminal_color_7  = C.fg -- white
 vim.g.terminal_color_15 = C.fg
