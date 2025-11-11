@@ -4,14 +4,27 @@ A small neovim colorscheme inspired by the gem of the same name
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d11b25dd-94b5-473c-99d5-b9cf6af669a3" />
 
 ## Installation
-1. Open your neovim config (`:e $MYVIMRC`)
-2. Add the command `vim.cmd "colorscheme prasiodark"` to the end of your `init.lua` if you want this colorscheme to be enabled at startup
-3. In the same directory, create a folder named `colors/`
-4. Copy `prasiodark.lua` into that folder
-5. Run `:colorscheme prasiodark` or restart neovim
-6. Enjoy!
+Install using your favourite plugin manager:
+```lua
+{ -- using lazy.nvim:
+  '2962fe22-10b3-43f8-8a33-252bd4b7435a/prasiolite',
+  lazy = false,
+},
+```
+
+Then, open your neovim config (`:e $MYVIMRC`)  
+Add `vim.cmd "colorscheme prasiodark"` to the end of your `init.lua` to have this colorscheme to enabled at startup  
+
+Restart neovim and enjoy!
+
+- To install without a plugin manager:
+  
+  In the same directory as your `init.lua`, create a folder named `colors/`  
+  Copy `colors/prasiodark.lua` into that folder.
+
+
 
 ## Coming ~soon~ eventually:
 - Light mode
 - Support for more languages
-  - The languages I use (C, C++, Rust, Python) all work, but if something seems wrong with a language you use, please file an issue!
+  - The languages I use (C, C++, Rust, Python, TSX) all work, but if something seems wrong with a language you use, please file an issue!
