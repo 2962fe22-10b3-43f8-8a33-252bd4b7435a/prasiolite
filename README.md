@@ -15,4 +15,3 @@ A small neovim colorscheme inspired by the gem of the same name
 - Light mode
 - Support for more languages
   - The languages I use (C, C++, Rust, Python) all work, but if something seems wrong with a language you use, please file an issue!
-- Installation through a plugin manager
