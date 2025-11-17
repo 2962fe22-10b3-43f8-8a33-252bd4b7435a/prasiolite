@@ -51,6 +51,7 @@ local function set_highlights()
     Character    = { link = "String" },
     SpecialChar  = { fg = C.swamp },
     Constant     = { fg = C.pastel },
+    PreProc      = { link = "Identifier" },
     ["@variable"]= { link = "Identifier" },
     ["@constructor"] = { link = "Type" },
     ["@type.builtin"] = { link = "Type" },
@@ -91,23 +92,22 @@ local function set_highlights()
   for group, settings in pairs(highlights) do
       vim.api.nvim_set_hl(0, group, settings)
   end
-end
+  vim.g.terminal_color_0  = C.bg
+  vim.g.terminal_color_8  = C.delim -- gray text
+  vim.g.terminal_color_1  = C.red
+  vim.g.terminal_color_9  = C.red
+  vim.g.terminal_color_2  = C.green
+  vim.g.terminal_color_10 = C.lime
+  vim.g.terminal_color_3  = C.gold
+  vim.g.terminal_color_11 = C.gold
+  vim.g.terminal_color_4  = C.blue
+  vim.g.terminal_color_12 = C.blue
+  vim.g.terminal_color_5  = C.purple
+  vim.g.terminal_color_13 = C.purple
+  vim.g.terminal_color_6  = C.forest -- teal
+  vim.g.terminal_color_14 = C.pastel
+  vim.g.terminal_color_7  = C.fg -- white text
+  vim.g.terminal_color_15 = C.fg -- white
+end -- function set_highlights()
 
 set_highlights()
-
-vim.g.terminal_color_0  = C.bg
-vim.g.terminal_color_8  = C.delim -- gray text
-vim.g.terminal_color_1  = C.red
-vim.g.terminal_color_9  = C.red
-vim.g.terminal_color_2  = C.green
-vim.g.terminal_color_10 = C.lime
-vim.g.terminal_color_3  = C.gold
-vim.g.terminal_color_11 = C.gold
-vim.g.terminal_color_4  = C.blue
-vim.g.terminal_color_12 = C.blue
-vim.g.terminal_color_5  = C.purple
-vim.g.terminal_color_13 = C.purple
-vim.g.terminal_color_6  = C.forest -- cyan
-vim.g.terminal_color_14 = C.pastel
-vim.g.terminal_color_7  = C.fg -- white text
-vim.g.terminal_color_15 = C.fg -- white
