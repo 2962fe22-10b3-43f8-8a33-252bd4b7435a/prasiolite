@@ -63,6 +63,15 @@ local function set_highlights()
     -- Uncomment this if you want function parameters highlighted
     -- Parameter = { fg = C.khaki },
 
+    -- Markdown
+    Title = { fg = C.gold },
+    ["@markup.list.markdown"] = { fg = C.operator },
+    ["@markup.quote.markdown"] = { link = "@spell" },
+    ["@markup.raw.block.markdown"] = { fg = C.pastel },
+    ["@markup.raw.markdown_inline"] = { fg = C.pastel },
+    ["@markup.link.url.markdown_inline"] = { fg = C.forest, underline = true },
+    ["@markup.link.label.markdown_inline"] = { fg = C.forest, underline = true },
+
     GitSignsAdd    = { fg = C.green },
     GitSignsChange = { fg = C.blue },
     GitSignsDelete = { fg = C.red },
